@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/dashboard.js"></script>
+
+
+</head>
+<header>
+    <div class="text-right">
+        <button class="btn btn-secondary" id="buttonPerfil" onclick="abrirMeuPerfil()"><span class="glyphicon glyphicon-user"></span></button>
+        <button class="btn btn-danger"   id="buttonLogout" onclick="logout()"><span class="glyphicon glyphicon-remove-sign"></span></button>     
+    </div>    
+</header>
+<body>
+    <div class="container">
+        <h1>
+            Bem Vindo, <span style="color: brown;"  id="nomeUsuario"></span>
+        </h1>
+        <hr>
+
+        <div class="row">
+        <div id="areaTabela">
+            <h1>Lista de Usuários</h1>
+            <button class="btn btn-success" id="buttonListar" onclick="listarUsuarios()">Listar</button>  
+            <div id="divListar">
+
+            </div>
+        </div>
+   
+        </div>
+      
+    </div>
+</body>
+</html>

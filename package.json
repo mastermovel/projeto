@@ -1,0 +1,17 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Exemplo html",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.2"
+  }
+}

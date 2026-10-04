@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/perfil.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button class="btn btn-primary" onclick="javascript:window.history.go(-1)"> Voltar</button>
+        </div>
+        <h1>
+            Meu Perfil, <span style="color: brown;"  id="nomeUsuario"></span>
+        </h1>
+        <hr>
+        <div class="row">
+            <!-- EDITAR -->
+            <div class="col-md-8">
+                <h3>Editar</h3>
+                    <span id="idEditar" name="idUsuario" disabled>
+                    <Label for="nomeEditar">E-mail:</Label>
+                    <input tupe="email" id="emailEditar" name="emailEditar" class="form-control mb-2">
+                    <Label for="emailEditar">Nome:</Label>
+                    <input id="nomeEditar" name="emailEditar" class="form-control mb-2">
+                    <Label for="profissaoEditar">Profissão:</Label>
+                    <input id="profissaoEditar" name="profissaoEditar" class="form-control mb-2">
+                    <br>
+                    <button class="btn btn-success" onclick="editar()">
+                        Editar
+                    </button>
+            </div>
+             <div class="col-md-4">
+                    <button class="btn btn-danger" onclick="excluir()">
+                        Excluir Conta
+                    </button>
+            </div>
+    </div>
+
+</body>
+</html>
