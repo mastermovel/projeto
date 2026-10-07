@@ -1,11 +1,11 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "Exemplo html",
+  "description": "Exemplo Node com Mysql",
   "license": "ISC",
-  "author": "",
+  "author": "Felipe Rustan",
   "type": "commonjs",
-  "main": "script.js",  
+  "main": "index.js",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
